@@ -1,0 +1,83 @@
+.button {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+}
+
+.button.collapse {
+    font-size: 0.8rem;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.button.collapse:hover {
+    background-color: #e6e6e6;
+}
+
+.button:hover, .button.pressed {
+    background-color: #5892fc;
+}
+
+.button:disabled {
+    background-color: #b4cbf7;
+}
+
+.button.delete {
+    background-color: transparent;
+    color: #dc3545;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    height: 40px;
+    width: 30px;
+}
+
+.button.cancel {
+    background-color: transparent;
+    color: #dc3545;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.button.cancel:hover,
+.button.delete:hover {
+    background-color: #f8d7da;
+}
+
+.button.edit, .button.accept {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+    height: 40px;
+}
+
+.button.edit:hover, .button.accept:hover {
+    background-color: #e6e6e6;
+}
+
+.button.item-action {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    height: 40px;
+    width: 30px;
+}
+
+.button.item-action:hover {
+    background-color: #e6e6e6;
+}

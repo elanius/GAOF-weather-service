@@ -1,0 +1,26 @@
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60px; /* Fixed width for the toolbar */
+    background-color: #f4f4f4;
+    border-left: 1px solid #ddd;
+}
+
+.toolbar-button {
+    width: 40px; /* Make buttons square */
+    height: 40px; /* Match width for square shape */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the icons */
+    padding: 10px;
+    margin: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    text-align: center;
+}
+
+.toolbar-button:hover {
+    background-color: #e6e6e6;
+}

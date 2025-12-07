@@ -1,0 +1,37 @@
+POST http://localhost:8001/local_situation
+accept: application/json
+content-type: application/json
+
+{
+  "lat": 40.073868105094846,
+  "lon": -74.50645788895967,
+  "width": 20100,
+  "height": 20100,
+  "sampling_size": 5000,
+  "refresh_rate": 600,
+  "weather_types": [
+    "temperature", "wind", "rain"
+  ]
+}
+
+###
+
+POST http://localhost:8001/near_zones
+     ?lat=40.073868105094846
+     &lon=-74.50645788895967
+     &radius=17700
+accept: application/json
+content-type: application/json
+
+[
+    {
+        "name": "precipitation",
+        "limit": 1.1,
+        "condition": ">="
+    },
+    {
+        "name": "wind_speed",
+        "limit": 1,
+        "condition": ">"
+    }
+]

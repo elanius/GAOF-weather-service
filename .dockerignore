@@ -1,0 +1,33 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore egg-info directories and files
+*.egg-info
+*.eggs
+
+# Ignore virtual environments
+venv/
+.env/
+
+# Ignore local environment variables
+.env
+
+# Ignore any IDE or editor settings
+.vscode/
+.idea/
+*.swp
+*~
+
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore Docker-related files (optional, if not needed in the image)
+.dockerignore
+docker-compose.yml
+Dockerfile
+
+# Ignore unnecessary documentation files
+README.md

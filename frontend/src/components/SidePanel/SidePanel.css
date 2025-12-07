@@ -1,0 +1,128 @@
+.side-panel-container {
+    display: flex;
+    flex-direction: row; /* Ensure toolbar and side-panel are side by side */
+    position: relative;
+    height: 100%; /* Occupy the whole available height */
+    width: 30%;
+    overflow: hidden; /* Prevent vertical scrollbar */
+}
+
+.side-panel {
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-left: 1px solid #ddd;
+    flex: 1; /* Allow side-panel to take remaining space */
+}
+
+.side-panel-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    max-height: calc(100% - 60px); /* Adjust height to leave space for .side-panel-bottom */
+    overflow-y: auto; /* Add vertical scrollbar if content overflows */
+}
+
+.side-panel-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Make it always visible */
+    bottom: 0; /* Stick to the bottom of the container */
+    background-color: #ffffff; /* Ensure background color matches */
+    z-index: 1; /* Ensure it stays above scrolling content */
+    padding-bottom: 20px;
+}
+
+.side-panel-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensure the table occupies the whole width */
+}
+
+.side-panel-table th,
+.side-panel-table td {
+    padding: 0px 8px;
+    border: 1px solid #ddd;
+}
+
+.side-panel-table th {
+    background-color: #f2f2f2;
+}
+
+.side-panel-table th:first-child,
+.side-panel-table td:first-child {
+    text-align: left;
+    width: 60%; /* Set width for the first column */
+    border-right: none; /* Remove the vertical line */
+}
+
+.side-panel-table th:last-child,
+.side-panel-table td:last-child {
+    text-align: right;
+    width: 40%; /* Set width for the second column */
+    border-left: none;
+}
+
+.property-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensure the table occupies the whole width */
+}
+
+.property-table th,
+.property-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.property-table th {
+    padding: 0px 8px;
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.property-table td:first-child {
+    text-align: left;
+}
+
+.property-table td:last-child {
+    text-align: right;
+}
+
+.property-name {
+    text-align: left;
+}
+
+.property-value {
+    text-align: right;
+}
+
+.property-name.payload {
+    background-color: #eef8e0;
+    font-weight: bold;
+}
+
+.property-value.payload {
+    background-color: #eef8e0;
+}
+
+.list-item-name {
+    text-align: left;
+}
+
+.list-item-actions {
+    text-align: right;
+}
+
+/* .list-item {
+} */
+
+.list-item.selected {
+    background-color: #d1e7ff;
+    border-color: #007bff;
+}
+

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+requests
+motor
+dacite
+geopy
+pytest
+httpx

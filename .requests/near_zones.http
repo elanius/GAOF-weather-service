@@ -1,0 +1,41 @@
+POST http://localhost:8001/near_zones
+     ?lat=51.54046325182698
+     &lon=-0.1538235784036779
+     &radius=10000
+accept: application/json
+content-type: application/json
+
+[
+    {
+        "name": "temp",
+        "limit": 10,
+        "condition": ">"
+    },
+    {
+        "name": "humidity",
+        "limit": 60.0,
+        "condition": ">="
+    }
+]
+
+###
+
+POST http://localhost:8001/near_zones
+     ?lat=42.96546750784811
+     &lon=-6.346257853515928
+     &radius=100000
+accept: application/json
+content-type: application/json
+
+[
+    {
+        "name": "precipitation",
+        "limit": 0.1,
+        "condition": ">"
+    },
+    {
+        "name": "temp",
+        "limit": 5,
+        "condition": ">"
+    }
+]

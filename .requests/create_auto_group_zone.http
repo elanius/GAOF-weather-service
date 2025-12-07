@@ -1,0 +1,14 @@
+
+POST http://localhost:8001/create_auto_group_zone
+accept: application/json
+content-type: application/json
+
+{
+  "name": "leon",
+  "rect": [
+    41.99624282178583, -6.156516782889684, 42.88200212690442, -4.698460621967532
+  ],
+  "sampling_size": 30000,
+  "refresh_rate": 3600,
+  "sub_zone_type": "rain"
+}

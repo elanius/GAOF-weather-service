@@ -1,0 +1,15 @@
+POST http://localhost:8001/local_situation
+accept: application/json
+content-type: application/json
+
+{
+  "lat": 48.946518848754174,
+  "lon": 21.16296710612785,
+  "width": 15100,
+  "height": 15100,
+  "sampling_size": 5000,
+  "refresh_rate": 600,
+  "weather_types": [
+    "temperature", "wind"
+  ]
+}

@@ -1,0 +1,14 @@
+.add-position input {
+    margin: 5px;
+}
+
+.position-list {
+    list-style: none;
+    padding: 0;
+}
+
+.position-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
